@@ -8,4 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="..\..\..\..\OneDrive\Рабочий стол\link.txt" Link="link.txt" />
+  </ItemGroup>
+
 </Project>
