@@ -1,5 +1,4 @@
 ﻿using System;
-using NoteApp;
 
 /// <summary>
 /// Summary description for Class1
