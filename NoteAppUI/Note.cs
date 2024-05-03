@@ -14,6 +14,8 @@ namespace NoteAppUI
         private int _id;
         private string _title;
         private string _content;
+        private DateTime _dateCreation;
+        private DateTime _dateModification;
         public Category _category;
 
         /// <summary>
@@ -71,15 +73,41 @@ namespace NoteAppUI
             }
         }
 
+        public DateTime DateCreation
+        {
+            get 
+            { 
+                return _dateCreation; 
+            }
+            set 
+            { 
+                _dateCreation = value; 
+            }
+        }
+
+        public DateTime DateModification
+        {
+            get 
+            { 
+                return _dateModification; 
+            }
+            set
+            {
+                _dateModification = value;
+            }
+        }
+
         /// <summary>
         /// Constructor function of the Note.
         /// </summary>
-        public Note(int id,string title, string content, Category category) 
+        public Note(int id,string title, string content, Category category, DateTime creationDate, DateTime modificationDate) 
         {
             Id = id;
             Title = title; 
             Content = content;
             _category = category;
+            _dateCreation = creationDate;
+            _dateModification = modificationDate;
         }
     }
 }
