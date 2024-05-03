@@ -19,7 +19,7 @@ namespace NoteAppUI
         /// <param name="filename">Путь к файлу, в который следует сохранить данные.</param>
         public static void SaveToFile(List<Note> data, string filename)
         {
-            string json = JsonConvert.SerializeObject(data, Formatting.Indented);
+            string json = JsonConvert.SerializeObject(data);
             File.WriteAllText(filename, json);
         }
         /// <summary>
@@ -40,5 +40,12 @@ namespace NoteAppUI
                 throw new FileNotFoundException("File not found.", filename);
             }
         }
+    }
+
+    public static class GlobalIndex
+    {
+        public static int index = 0;
+        public static int flag = 0;
+        public static int indexDelete = 0;
     }
 }

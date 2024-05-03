@@ -14,7 +14,7 @@ namespace NoteAppUI
     {
 
         private string _name;
-        private string _description;
+        //private string _description;
 
         /// <summary>
         /// Gets or sets the name of the category.
@@ -35,7 +35,7 @@ namespace NoteAppUI
                 _name = value;
             }
         }
-
+        /*
         /// <summary>
         /// Gets or sets the description of the category.
         /// </summary>
@@ -50,11 +50,11 @@ namespace NoteAppUI
                 _description = value; 
             }
         }
-
-        public Category(string name, string description) 
+        */
+        public Category(string name) 
         {
             Name = name;
-            Description = description;
+            //Description = description;
         }
     }
 }
