@@ -193,7 +193,6 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3 });
             toolStrip1.Location = new Point(13, 561);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(100, 27);
             toolStrip1.TabIndex = 11;
             toolStrip1.Text = "toolStrip1";
             // 

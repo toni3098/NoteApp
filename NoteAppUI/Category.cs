@@ -56,5 +56,6 @@ namespace NoteAppUI
             Name = name;
             //Description = description;
         }
+        public Category() { }
     }
 }

@@ -80,7 +80,11 @@ namespace NoteAppUI
                 return _dateCreation; 
             }
             set 
-            { 
+            {
+                if (value > DateTime.Now)
+                {
+                    throw new ArgumentException("Дата модификации не может быть в будущем.");
+                }
                 _dateCreation = value; 
             }
         }
@@ -93,6 +97,10 @@ namespace NoteAppUI
             }
             set
             {
+                if (value > DateTime.Now)
+                {
+                    throw new ArgumentException("Дата модификации не может быть в будущем.");
+                }
                 _dateModification = value;
             }
         }
@@ -100,6 +108,8 @@ namespace NoteAppUI
         /// <summary>
         /// Constructor function of the Note.
         /// </summary>
+
+        
         public Note(int id,string title, string content, Category category, DateTime creationDate, DateTime modificationDate) 
         {
             Id = id;
@@ -109,5 +119,6 @@ namespace NoteAppUI
             _dateCreation = creationDate;
             _dateModification = modificationDate;
         }
+        public Note(){ }
     }
 }

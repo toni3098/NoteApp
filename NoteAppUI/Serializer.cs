@@ -121,4 +121,11 @@ namespace NoteAppUI
             
         }
     }
+
+    public static class GlobalIndex
+    {
+        public static int index = 0;
+        public static int flag = 0;
+        public static int indexDelete = 0;
+    }
 }
