@@ -14,10 +14,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace NoteAppUI
 {
-    public partial class NoteForm : Form
+    public partial class NoteForm1 : Form
     {
         public List<Note> loadNotes = new List<Note>();
-        public NoteForm()
+        public NoteForm1()
         {
             InitializeComponent();
             try
@@ -189,12 +189,16 @@ namespace NoteAppUI
             switch (selectedItem)
             {
                 case "All":
-                    listBox_Categories.Items.Clear();
-
-                    // Ajouter les noms triés au ListBox
-                    foreach (Note obj in loadNotes)
+                    Name_label.Text = listBox_Categories.SelectedItem.ToString();
+                    for (int i = 0; i < loadNotes.Count; i++)
                     {
-                        listBox_Categories.Items.Add(obj.Title);
+                        if ((listBox_Categories.SelectedItems != null) && (listBox_Categories.SelectedItem == loadNotes[i].Title))
+                        {
+                            Item_Category_label.Text = loadNotes[i]._category.Name.ToString();
+                            Creation_dateTimePicker.Value = loadNotes[i].DateCreation;
+                            Modification_dateTimePicker.Value = loadNotes[i].DateModification;
+                            Content_richBox.Text = loadNotes[i].Content;
+                        }
                     }
                     break;
                 case "By creation date":
