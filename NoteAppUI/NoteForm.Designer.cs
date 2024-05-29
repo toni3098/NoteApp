@@ -209,13 +209,13 @@
             // toolStripButton2
             // 
             toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
-            toolStripButton2.ImageTransparentColor = Color.Magenta;
+            //toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
+            //toolStripButton2.ImageTransparentColor = Color.Magenta;
             toolStripButton2.Name = "toolStripButton2";
             toolStripButton2.Size = new Size(29, 24);
             toolStripButton2.Text = "toolStripButton2";
             toolStripButton2.Click += toolStripButton2_Click;
-            // 
+             
             // toolStripButton3
             // 
             toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;

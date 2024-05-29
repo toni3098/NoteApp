@@ -21,7 +21,15 @@ namespace NoteAppUI
         public NoteForm()
         {
             InitializeComponent();
-            loadNotes = Serializer.LoadFromFile<List<Note>>("NoteApp.json");
+            try 
+            {
+                loadNotes = Serializer.LoadFromFile<List<Note>>("NoteApp.json");
+            } 
+            catch (Exception ex) 
+            {
+              
+            }
+            
 
             for (int i = 0; i < loadNotes.Count; i++)
             {

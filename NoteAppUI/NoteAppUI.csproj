@@ -33,4 +33,8 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;C:\Program Files (x86)\Inno Setup 6\Compil32.exe&quot; $(SolutionDir)InstallScripts\installer.iss" />
+  </Target>
+
 </Project>

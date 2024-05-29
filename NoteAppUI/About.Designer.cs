@@ -103,6 +103,7 @@
             linkLabel2.TabIndex = 6;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "https://github.com/toni3098/NoteApp.git";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // label6
             // 
@@ -113,7 +114,7 @@
             label6.TabIndex = 7;
             label6.Text = "2024 Zafitombo Antonio ©";
             // 
-            // Form2
+            // About
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -126,7 +127,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form2";
+            Name = "About";
             Text = "About";
             ResumeLayout(false);
             PerformLayout();

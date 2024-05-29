@@ -18,7 +18,14 @@ namespace NoteAppUI
         public AddEditNote()
         {
             InitializeComponent();
-            notes = Serializer.LoadFromFile<List<Note>>("NoteApp.json");
+            try
+            {
+                notes = Serializer.LoadFromFile<List<Note>>("NoteApp.json");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
             textBox1.Text = notes[GlobalIndex.index].Title.ToString();
             textBox2.Text = notes[GlobalIndex.index].Content.ToString();

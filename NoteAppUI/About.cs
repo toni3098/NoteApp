@@ -16,5 +16,10 @@ namespace NoteAppUI
         {
             InitializeComponent();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

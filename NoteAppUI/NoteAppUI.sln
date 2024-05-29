@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteAppUI", "NoteAppUI.csproj", "{A731869F-ACED-4D59-B637-8B25F7C2F343}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteApp.UnitTests", "..\NoteApp.UnitTests\NoteApp.UnitTests.csproj", "{DEC21E39-0532-4EC9-8B88-1D68580F256C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteApp.UnitTests", "..\NoteApp.UnitTests\NoteApp.UnitTests.csproj", "{DEC21E39-0532-4EC9-8B88-1D68580F256C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{A731869F-ACED-4D59-B637-8B25F7C2F343} = {A731869F-ACED-4D59-B637-8B25F7C2F343}
 	EndProjectSection
